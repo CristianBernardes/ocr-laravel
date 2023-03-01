@@ -19,7 +19,23 @@ Gere uma chave unica para a aplicação com `php artisan key:generate`
 
 Inicie a aplicação com `php artisan serve`
 
-**Pacotes necessários para o funcionamento do OCR em seu sistema operacional:**
+## Iniciando a Aplicação com docker
+
+Cerifique-se que o Docker e o Docker compose estejam instalados em sua maquina antes de realizar os comandos abaixo
+
+Suba os containers com o seguinte comando `docker compose up -d`
+
+Após subir o container e não ter acontecido nenhum erro, entre dentro do container com o seguinte comando `docker exec -it ocr-app bash`
+
+Instale os pacotes com `composer install`
+
+Copie o arquivo .env.example para .env com `cp .env.example .env`
+
+Gere uma chave unica para a aplicação com `php artisan key:generate`
+
+Abra o seu nagedor e digite http://127.0.0.1:8888/ocr
+
+**Pacotes necessários para o funcionamento do OCR em seu sistema operacional se não for feito com o DOCKER:**
 
 **Repositórios utilizados:**
 
